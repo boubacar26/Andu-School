@@ -20,6 +20,7 @@ export const RESETPASSWORD = "/aut/resetPassword";
  */
 export const ACCEUIL_PATH = "/";
 export const PRODUCTS_PATH = "products";
+export const CONNEXION = "/connexion"
 
 /**
  * @readonly

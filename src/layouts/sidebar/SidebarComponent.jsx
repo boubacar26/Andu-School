@@ -13,7 +13,7 @@ const SidebarComponent = ({ bgColor, activeLinkColor, activeLinkBgColor, colorOn
   return (
     <div
       style={{
-        backgroundColor: bgColor ? bgColor : "#fff",
+        backgroundColor: "#009688",
         height: "100%",
         padding: "25px 10px",
         borderRight: "1px solid rgba(0,0,0,0.1)"

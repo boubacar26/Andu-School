@@ -28,29 +28,28 @@ import styled from "styled-components";
 const Label = styled.label`
   display: flex;
   align-items: center;
-  width: 100%;
-  backgroundColor: #fff;
+  backgroundcolor: #fff;
   position: relative;
-  margin: 0.5rem 0;
-`
+`;
 const InputForm = styled.input`
-  width: 100%;
-  padding: 0.8rem 2.5rem 0.8rem;
-`
+  padding: 8px;
+`;
 const IconContainer = styled.span`
   position: absolute;
   left: -1px;
-`
+`;
 
 function Input({
   type,
-  value = '',
+  value = "",
   onChange,
   label,
   errorMessage,
   icon,
   extraOptions,
-  name
+  name,
+  className,
+  style,
 }) {
   return (
     <Label>
@@ -64,9 +63,11 @@ function Input({
         )}
       </IconContainer>
       <InputForm
+        className={className}
         placeholder={label}
         type={type ?? "text"}
         value={value}
+        style={style}
         onChange={(e) => onChange(e.target.value, name)}
         {...extraOptions}
       />

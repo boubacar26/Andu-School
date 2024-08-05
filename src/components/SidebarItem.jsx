@@ -45,6 +45,7 @@ const SidebarItem = ({
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          color: "white",
         }}
       >
         <linkItem.icon size={22} className="icon" />
@@ -55,6 +56,8 @@ const SidebarItem = ({
           left: 45,
           fontSize: 17,
           width: "100%",
+          color: "white",
+
         }}
       >
         {label}

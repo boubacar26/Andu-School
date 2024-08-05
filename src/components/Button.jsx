@@ -16,9 +16,11 @@ function Button({
   height,
   radius,
   loading,
+  className,
 }) {
   return (
     <button
+      className={className}
       style={{
         border: "1px solid " + bgColor,
         display: "flex",
@@ -32,7 +34,7 @@ function Button({
         paddingRight: 10,
         cursor: "pointer",
         color: color ?? "black",
-        borderRadius: radius ?? 5,
+        // borderRadius: radius ?? 5,
         ...style,
       }}
       onClick={onClick}

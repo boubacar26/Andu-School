@@ -1,5 +1,6 @@
-import { ACCEUIL_PATH, PRODUCTS_PATH } from "./navigationPaths";
-import { HiHome } from "react-icons/hi";
+import { ACCEUIL_PATH, PRODUCTS_PATH, CONNEXION } from "./navigationPaths";
+import { MdDashboard } from "react-icons/md";
+import { IoSchoolSharp } from "react-icons/io5";
 
 /*
 |--------------------------------------------------------------------------
@@ -10,6 +11,8 @@ import { HiHome } from "react-icons/hi";
 | de SplitShell
 */
 export const links = [
-    { path: ACCEUIL_PATH, icon: HiHome, label: "Acceuil" },
-    { path: PRODUCTS_PATH, icon: HiHome, label: "Produits" },
-]
+  { path: ACCEUIL_PATH, icon: MdDashboard, label: "Dashboard" },
+  { path: PRODUCTS_PATH, icon: IoSchoolSharp, label: "Classes" },
+  { path: PRODUCTS_PATH, icon: MdDashboard, label: "Frais de scolarité" },
+  { path: CONNEXION, icon: MdDashboard, label: "Inscription" },
+];
